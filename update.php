@@ -94,8 +94,7 @@ if (isset($_POST['update'])) {
             <div class="card shadow-sm">
                 <div class="card-body p-4">
                     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST">
-                        <input type="hidden" name="id_to_update" value="<?php echo htmlspecialchars($_POST['id_to_update'] ?? $found_food['id'] ?? ''); ?>">
-    <p><?php echo htmlspecialchars($_POST['id_to_update'] ?? $found_food['id'] ?? 'hello'); ?></p>    
+                        <input type="hidden" name="id_to_update" value="<?php echo htmlspecialchars($_POST['id_to_update'] ?? $found_food['id'] ?? ''); ?>">   
                         <div class="mb-3">
                             <label for="email" class="form-label">Your Email</label>
                             <input type="email"
