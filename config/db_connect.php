@@ -2,7 +2,7 @@
 
 try {
 	// connect to the database
-	$conn = mysqli_connect('localhost', 'cohort', 'cohort1234', 'cohort_db', 3307);
+	$conn = mysqli_connect('localhost', 'valentino', 'Abiodun1', 'valentino_db', 3306);
 
 	// check connection
 	if (!$conn) {

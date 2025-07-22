@@ -64,6 +64,10 @@ if (isset($_GET['id'])) {
 				<input type="hidden" name="id_to_delete" value="<?php echo $cohort_food['id']; ?>">
 				<input type="submit" name="delete" value="Delete" class="btn btn-danger">
 			</form>
+			<form action="update.php" method="post">
+				<input type="hidden" name="id_to_edit" value="<?php echo $cohort_food['id']; ?>">
+				<input type="submit" value="Edit" class="btn btn-primary">
+			</form>
 		<?php
 		} else {
 			// Food doesn't exist
